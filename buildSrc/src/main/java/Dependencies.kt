@@ -10,7 +10,7 @@ object BuildPlugins {
 
     object Versions {
         const val buildToolsVersion = "3.6.2"
-        const val hiltDaggerGradle = "2.28-alpha"
+        const val hiltDaggerGradle = "2.29.1-alpha"
     }
 
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.buildToolsVersion}"
@@ -86,15 +86,16 @@ object APILibraries {
 object DILibraries {
 
     object Versions {
-        const val hiltAndroid = "2.28-alpha"
-        const val hiltAndroidCompiler = "2.28-alpha"
-        const val hiltCompiler = "1.0.0-alpha01"
-        const val hiltViewModel = "1.0.0-alpha01"
+        const val hiltAndroid = "2.29.1-alpha"
+        const val hiltAndroidCompiler = "2.29.1-alpha"
+        //const val hiltCompiler = "1.0.0-alpha02"
+        const val hiltViewModel = "1.0.0-alpha02"
     }
 
     const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hiltAndroid}"
-    const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroidCompiler}"
-    const val hiltCompiler = "androidx.hilt:hilt-compiler:${Versions.hiltCompiler}"
+    //const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroidCompiler}"
+    //const val hiltCompiler = "androidx.hilt:hilt-compiler:${Versions.hiltCompiler}"
+    const val hiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hiltAndroidCompiler}"
     const val hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hiltViewModel}"
 
 }

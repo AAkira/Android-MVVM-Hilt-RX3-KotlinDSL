@@ -71,7 +71,7 @@ dependencies {
 
     implementation(DILibraries.hiltAndroid)
     implementation(DILibraries.hiltViewModel)
-    kapt(DILibraries.hiltAndroidCompiler)
+    //kapt(DILibraries.hiltAndroidCompiler)
     kapt(DILibraries.hiltCompiler)
 
     implementation(ImageLoaderLibraries.coil)
